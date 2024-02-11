@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ethiopian Themed Tetris</title>
+<link rel="stylesheet" href="mainstyle.css">
+<style> 
+  #resetButton {
+    display: block;
+    margin: 0px auto;
+    padding:10px 30px;
+    font-size: 20px;
+    background-color: #078d00;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<nav style="background-color: #078d00; padding: 10px; text-align: center;">
+  <a href="#" style="color: white; margin-right: 20px;
+  text-decoration: none; font-size: 20px; font-weight: bold;
+  ">Tetris Game - Computer Graphics</a>
+</nav>
+<canvas id="my-canvas" width="240" height="300"></canvas>
+<button id="resetButton">Reset</button> 
+<script src="TetrisBasic.js"></script>
+<script>
+  // on reset button click, reload the page
+  document.getElementById('resetButton').addEventListener('click', function() {
+    location.reload();
+  });
+</script>
+</body>
+</html>

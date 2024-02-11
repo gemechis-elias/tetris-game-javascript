@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    background: #fff;
+    background-color: #fff; /* Change this to a suitable color or add a background image */
+    background-image: url('path/to/your/ethiopian-theme-image.jpg'); /* Add your image path */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+}
+#my-canvas {
+    background: #fff;
+    margin-left: 10px;
+    margin-top: 10px;
+}
