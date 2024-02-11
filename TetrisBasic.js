@@ -18,7 +18,7 @@ let curTetromino = [[1,0], [0,1], [1,1], [2,1]];
 // 3. Will hold all the Tetrominos 
 let tetrominos = [];
 // 3. The tetromino array with the colors matched to the tetrominos array
-let tetrominoColors = ['purple','cyan','blue','yellow','orange','green','red'];
+let tetrominoColors = ['purple','cyan','blue','yellow','orange','grey','red'];
 // 3. Holds current Tetromino color
 let curTetrominoColor;
 
@@ -58,7 +58,7 @@ function CreateCoordArray(){
         // 12 * 23 = 276 - 12 = 264 Max X value
         for(let x = 11; x <= 264; x += 23){
             coordinateArray[i][j] = new Coordinates(x,y);
-            // console.log(i + ":" + j + " = " + coordinateArray[i][j].x + ":" + coordinateArray[i][j].y);
+            console.log(i + ":" + j + " = " + coordinateArray[i][j].x + ":" + coordinateArray[i][j].y);
             i++;
         }
         j++;
@@ -83,7 +83,7 @@ function SetupCanvas(){
     ctx.strokeStyle = 'black';
     ctx.strokeRect(8, 8, 280, 462);
 
-    tetrisLogo = new Image(161, 54);
+    tetrisLogo = new Image(161, 84);
     tetrisLogo.onload = DrawTetrisLogo;
     tetrisLogo.src = "tetrislogo.png";
 
@@ -144,7 +144,7 @@ function SetupCanvas(){
 }
 
 function DrawTetrisLogo(){
-    ctx.drawImage(tetrisLogo, 300, 8, 161, 54);
+    ctx.drawImage(tetrisLogo, 330, 8, 141, 64);
 }
 
 function DrawTetromino(){
